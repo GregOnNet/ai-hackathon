@@ -1,4 +1,4 @@
-<ai-one-column-layout #layout>
+<ai-one-column-layout [links]="links" #layout>
   <ai-menu-bar title="AI Hackathon" (menuClick)="layout.toggleSidenav()"></ai-menu-bar>
   <main>
     <router-outlet></router-outlet>

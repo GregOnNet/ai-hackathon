@@ -1,5 +1,7 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, Input, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material';
+
+import { SidebarLink } from '../sidebar-link/sidebar-link';
 
 @Component({
   selector: 'ai-one-column-layout',
@@ -7,6 +9,8 @@ import { MatSidenav } from '@angular/material';
   styleUrls: ['./one-column-layout.component.scss']
 })
 export class OneColumnLayoutComponent {
+  @Input() links: SidebarLink[];
+
   @ViewChild(MatSidenav) private _sidenav: MatSidenav;
   @ViewChild('container') private container: HTMLDivElement;
 

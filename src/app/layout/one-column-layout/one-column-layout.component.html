@@ -3,18 +3,7 @@
   <mat-sidenav-container class="example-sidenav-container">
     <mat-sidenav>
       <mat-nav-list>
-        <a mat-list-item href="">
-          <mat-icon>monetization_on</mat-icon>
-          <span class="link-text">Stocks</span>
-        </a>
-        <a mat-list-item routerLink="legal">
-          <mat-icon>info</mat-icon>
-          <span class="link-text">About</span>
-        </a>
-        <a mat-list-item href="">
-          <mat-icon>feedback</mat-icon>
-          <span class="link-text">Feedback</span>
-        </a>
+        <ai-sidebar-link [link]="link" *ngFor="let link of links"></ai-sidebar-link>
       </mat-nav-list>
     </mat-sidenav>
 

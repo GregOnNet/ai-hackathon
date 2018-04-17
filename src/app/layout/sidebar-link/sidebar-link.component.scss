@@ -1,0 +1,14 @@
+a[mat-list-item] {
+  color: #000000;
+  opacity: 0.54;
+
+  &:hover {
+    color: #673AB7;
+    opacity: 1;
+  }
+
+  .link-text {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}

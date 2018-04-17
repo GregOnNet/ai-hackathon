@@ -5,6 +5,7 @@ import { MatButtonModule, MatIconModule, MatSidenavModule, MatToolbarModule, Mat
 import { MenuBarComponent } from './menu-bar/menu-bar.component';
 import { OneColumnLayoutComponent } from './one-column-layout/one-column-layout.component';
 import { RouterModule } from '@angular/router';
+import { SidebarLinkComponent } from './sidebar-link/sidebar-link.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,7 @@ import { RouterModule } from '@angular/router';
     MatSidenavModule,
     MatToolbarModule
   ],
-  declarations: [MenuBarComponent, OneColumnLayoutComponent],
+  declarations: [MenuBarComponent, OneColumnLayoutComponent, SidebarLinkComponent],
   exports: [MenuBarComponent, OneColumnLayoutComponent]
 })
 export class LayoutModule { }
