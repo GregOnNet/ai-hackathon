@@ -2,7 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material';
 
 @Component({
-  selector: 'aec-one-column-layout',
+  selector: 'ai-one-column-layout',
   templateUrl: './one-column-layout.component.html',
   styleUrls: ['./one-column-layout.component.scss']
 })
